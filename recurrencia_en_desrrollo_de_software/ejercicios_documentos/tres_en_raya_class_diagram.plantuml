@@ -1,0 +1,12 @@
+@startuml
+
+Board "*" *-- "3x3" Cell
+abstract Figure
+Cell "*" -- "0..1" Figure
+Figure ^-- X
+Figure ^-- O
+Player "*" -- "1" Figure
+Game -- "1" Board
+Game -- "2" Player
+
+@enduml

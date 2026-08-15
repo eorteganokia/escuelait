@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8">
+<cv>
+    <name>Eder Ortega Cardona</name>
+    <profession>System Ingeneer</profession>
+    <profile>I am a Software Engineer with almost ten years of development experience with Python, C# .net, I have participated in mobile application development and integration of systems and hardware devices. </profile>
+    <contact>
+        <telephoneNumber>+57 333 8888049</telephoneNumber>
+        <email>eder.ortega.eng@zoho.com</email>
+        <address>Colombia</address>
+    </contact>
+    <skills>
+        <skillDescription>Python (Django)</skillDescription>
+        <skillDescription>Html, Javascript, JQuery y Bootstrap</skillDescription>
+        <skillDescription>Git</skillDescription>
+        <skillDescription>SqlServer and PostgreSQL database</skillDescription>
+        <skillDescription>SCRUM nethodology</skillDescription>
+        <skillDescription>Intermidia English</skillDescription>
+        <skillDescription>Intermidia English</skillDescription>
+    </skills>
+    <education>
+        <academicStudy>
+            <year>2018</year>
+            <institution>Universidad del Sinu</institution>
+            <titleName>System Ingeneer</titleName>
+            <location>Cartagena, Colombia</location>
+        </academicStudy>
+        <academicStudy>
+            <year>2002</year>
+            <institution>Universidad Tecnologico Comfenalco</institution>
+            <titleName>System Technologist</titleName>
+            <location>Cartagena, Colombia</location>
+        </academicStudy>
+        <academicStudy>
+            <year>2020</year>
+            <institution>Linkedin learning</institution>
+            <titleName>Agile Testing</titleName>
+            <location></location>
+        </academicStudy>
+        <academicStudy>
+            <year>2020</year>
+            <institution>Linkedin learning</institution>
+            <titleName>Unit Testing and Test Driven Development in Python</titleName>
+            <location></location>
+        </academicStudy>
+        <academicStudy>
+            <year>2020</year>
+            <institution>Datacamp</institution>
+            <titleName>Importing & Cleaning Data with Python Track</titleName>
+            <location></location>
+        </academicStudy>
+        <academicStudy>
+            <year>2020</year>
+            <institution>Datacamp</institution>
+            <titleName>Python Fundamentals Track</titleName>
+            <location></location>
+        </academicStudy>
+    </education>
+    <projects>
+        <project>
+            <name>ZinaBI</name>
+            <description>Rollout system for the management of activities and resources on site. Generates execution time indicators,
+forecast alerts, among others.</description>
+            <customer>LSV TECH / NOKIA</customer>
+            <duration>Until now</duration>
+            <role>Python Developer</role>
+            <teamSize>5</teamSize>
+            <tools>Python-Django, Django rest framework, Bootstrap, Javascript, JQuery, PostgreSQL, PLSQL and Gitlab.</tools>
+        </project>
+        <project>
+            <name>Text analizar plus – Degree thesis</name>
+            <description>Analyze the syllabus of the faculty of systems engineering to determine the presence of Blooms taxonomy levels, using text mining.</description>
+            <customer>Universidad del Sinu</customer>
+            <duration>6 months</duration>
+            <role>developer</role>
+            <teamSize>1</teamSize>
+            <tools>Python-Django, Bootstrap, JQuery, PostgreSQL and NLTK library.</tools>
+        </project>
+        <project>
+            <name>General management system</name>
+            <description>Manage the invoice payment process by recording the traceability from receipt, audit to payment.</description>
+            <customer>DADIS</customer>
+            <duration>2 years</duration>
+            <role>Python Developer</role>
+            <teamSize>3</teamSize>
+            <tools>Python-Django, Bootstrap, JQuery, PostgreSQL and Git.</tools>
+        </project>
+    </projects>
+</cv>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8">
+<agenda>
+    <contact id="1">
+        <name>Linus Torval</name>
+        <telephone>+1 201 555 4567</telephone>
+        <alternativeID>3</alternativaID>
+        <alternativeID>4</alternativaID>
+    </contact>
+    <contact id="2">
+        <name>Uncle Bob</name>
+        <telephone>+1 501 555 3567</telephone>
+    </contact>
+    <contact id="3">
+        <name>Erich Gamma</name>
+        <telephone>+1 523 555 3599</telephone>
+    </contact>
+    <contact id="4">
+        <name>Martin Fowler</name>
+        <telephone>+1 235 555 6289</telephone>
+    </contact>
+</agenda>

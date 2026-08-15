@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8">
+<schedule>
+    <monday>
+        <entry init_time="09:00" end_time="11:00">
+            Machine Learning class
+        </entry>
+        <entry init_time="12:00" end_time="14:00">
+            Lunch
+        </entry>
+    </monday>
+    <tuesday>
+        <entry init_time="08:00" end_time="10:00">
+            Speech: How to clean code
+        </entry>
+    </tuesday>
+    <wednesday>
+    </wednesday>
+    <thursday>
+    </thursday>
+    <friday>
+    </friday>
+    <saturday>
+    </saturday>
+    <sunday>
+    </sunday>
+</schedule>

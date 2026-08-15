@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8">
+<menu>
+    <menuItem>
+        <label>New tab</label>
+    </menuItem>
+    <menuItem>
+        <label>New window</label>
+    </menuItem>
+    <menuItem>
+        <label>New incognito window</label>
+    </menuItem>
+    <menuItem>
+        <label>Password and autofill</label>
+        <menu>
+            <menuItem>
+                <label>Password manager</label>
+            </menuItem>
+            <menuItem>
+                <label>Payment methods</label>
+            </menuItem>
+            <menuItem>
+                <label>Addresses and more</label>
+            </menuItem>
+        </menu>
+    </menuItem>
+    <menuItem>
+        <label>History</label>
+    </menuItem>
+    <menuItem>
+        <label>Downloads</label>
+    </menuItem>
+    <menuItem>
+        <menu>
+            <menuItem>
+                <label>Bookmarks and lists</label>
+            </menuItem>
+            <menuItem>
+                <label>Bookmark this tab</label>
+            </menuItem>
+            <menuItem>
+                <label>Show bookmark bar</label>
+            </menuItem>
+            <menuItem>
+                <label>Show all bookmarks</label>
+            </menuItem>
+            <menuItem>
+                <label>Bookmark manager</label>
+            </menuItem>
+            <menuItem>
+                <label>Import bookmark and settings</label>
+            </menuItem>
+        </menu>
+    </menuItem>
+    <menuItem>
+        <label>Extension</label>
+    </menuItem>
+    <menuItem>
+        <label>Delete browsing data</label>
+    </menuItem>
+    <menuItem>
+        <label>Print</label>
+    </menuItem>
+    <menuItem>
+        <label>Find and edit</label>
+        <menuItem>
+            <label>Find</label>
+        </menuItem>
+        <menuItem>
+            <label>Cut</label>
+        </menuItem>
+        <menuItem>
+            <label>Copy</label>
+        </menuItem>
+        <menuItem>
+            <label>Paste</label>
+        </menuItem>
+    </menuItem>
+    <menuItem>
+        <label>Save and share</label>
+        <menuItem>
+            <label>Save page as...</label>
+        </menuItem>
+        <menuItem>
+            <label>Copy link</label>
+        </menuItem>
+        <menuItem>
+            <label>Send to your device</label>
+        </menuItem>
+        <menuItem>
+            <label>Create QR</label>
+        </menuItem>
+        <menuItem>
+            <label>Cast</label>
+        </menuItem>
+    </menuItem>
+    <menuItem>
+        <label>More tools</label>
+        <menuItem>
+            <label>New window</label>
+        </menuItem>
+        <menuItem>
+            <label>Reading mode</label>
+        </menuItem>
+        <menuItem>
+            <label>Performance</label>
+        </menuItem>
+        <menuItem>
+            <label>Task manager</label>
+        </menuItem>
+        <menuItem>
+            <label>Developer tools</label>
+        </menuItem>
+        <menuItem>
+            <label>Chrome Labs</label>
+        </menuItem>
+    </menuItem>
+    <menuItem>
+        <label>About Chromium</label>
+    </menuItem>
+    <menuItem>
+        <label>Settings</label>
+    </menuItem>
+    <menuItem>
+        <label>Exit</label>
+    </menuItem>
+</menu>
