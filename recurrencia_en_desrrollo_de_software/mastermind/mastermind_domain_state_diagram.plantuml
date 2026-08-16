@@ -1,0 +1,13 @@
+@startuml
+
+skin rose
+
+[*] --> Attempt: CodeMaker generate SecretCode / Wait Guess code
+Attempt --> Validate: CodeBreaker generate GuessCode [there's attempts]/ Validate guess code
+Validate --> Win: Feedback [SecretCode == GuessCode] / CodeBreaker win!
+Validate --> Attempt: Feedback [SecretCode <> GuessCode] / New attempt
+Attempt --> Lose: [attempts exhausted]: CodeBreaker lose
+Win --> [*]
+Lose --> [*]
+
+@enduml

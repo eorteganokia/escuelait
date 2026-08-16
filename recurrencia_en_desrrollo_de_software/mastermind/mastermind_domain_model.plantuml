@@ -1,0 +1,48 @@
+@startuml
+
+skin rose
+
+abstract Player
+Player ^-- Codemaker
+Player ^-- Codebreaker
+
+abstract Peg
+Peg ^-- CodePeg
+Peg ^-- KeyPeg
+note top of Peg
+Each peg has one color:
+(Red, orange, blue, black, green or white).
+end note
+
+abstract Hole
+Hole ^-- CodeHole
+Hole ^-- CheckHole
+
+CheckHole "*" -- "0..1" KeyPeg
+CodeHole "*" -- "0..1" CodePeg
+
+GuessLine "*" *-- "4" CodeHole
+GuessLine "*" *-- "4" CheckHole
+GuessLine "6..12" --* "1" Board
+
+SecretCodeLine "*" --* "4" CodeHole
+SecretCodeLine "1" *-- "1" Board
+
+Game "*" *-- "1" Codemaker
+Game "*" *-- "1" Codebreaker
+Game "*" *-- "1" Board
+
+CodeGenerator -- CodePeg
+CodeGenerator ^-- SecretCodeGenerator
+CodeGenerator ^-- GuessCodeGenerator
+
+SecretCodeGenerator -- SecretCodeLine
+Codemaker -- SecretCodeGenerator
+
+Feedback -- GuessLine
+Codemaker -- Feedback
+
+GuessCodeGenerator -- GuessLine
+Codebreaker -- GuessCodeGenerator
+
+@enduml
