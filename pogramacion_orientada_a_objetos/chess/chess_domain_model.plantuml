@@ -1,0 +1,40 @@
+@startuml
+
+skin rose
+
+Chess *-- Board
+Chess *-- Turn
+Chess "1" *-- "2" Player
+
+Board "1" *-- "1..*" Piece
+Board -- MovementRule
+
+Player -- Coordinate
+Player -- Board
+
+BaseStep ^-- Step
+BaseStep ^-- ComplexStep
+
+Step -- Direction
+ComplexStep *-- "1..*" Step
+
+StepBuilder *-- "1..*" Step
+
+MovementRule *-- "1..*" BaseStep 
+
+Piece -- MovementRule
+Piece ^-- King
+Piece ^-- Queen
+Piece ^-- Rook
+Piece ^-- Bishop
+Piece ^-- Knight
+Piece ^-- Pawn
+Piece "0..1" -- "1" Position
+Piece *-- Color
+
+enum Color
+Color : - BLACK
+Color : - WHITE
+
+
+@enduml
