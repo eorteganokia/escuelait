@@ -1,0 +1,67 @@
+@startuml
+
+skin rose
+
+class Mastermind {
+    Mastermind()
+    void play()
+    boolean isResumed()
+    void main(String[])
+}
+Mastermind *--> Board
+
+class Board {
+    int MAXATTEMPTS
+    int currentAttempt
+    boolean isWinner
+    String[] attempts
+    void play()
+    boolean hasAttempts()
+    void showAttempts()
+    void results()
+    
+}
+
+Board --> SecretCombination
+Board ..> Combination
+
+
+enum Color
+Color : - RED
+Color : - GREEN
+Color : - BLUE
+Color : - YELLOW
+Color : - PINK
+Color : - MAGENTA
+Color : - ORANGE
+Color : - SILVER
+
+class Combination {
+    #int CODE_LENGTH
+    #Color[] code
+    boolean isValidLenght(String)
+    boolean hasValidColors(String)
+    boolean isValid(String)
+    Color[] fromString(String)
+    void askCombination()
+    boolean equals(Combination)
+    String toString()
+}
+
+Combination *--> Color
+Combination <|-- SecretCombination
+Combination ..> Console
+
+class SecretCombination {
+    void generate()
+    String feedback(Combination)
+}
+
+class Console {
+    -Scanner in
+    Console()
+    String readString(String)
+
+}
+
+@enduml
