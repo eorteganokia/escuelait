@@ -1,0 +1,67 @@
+@startuml
+
+skin rose
+
+class Mastermind {
+    Mastermind()
+    void play()
+    boolean isResumed()
+    void main(String[])
+}
+Mastermind *--> models.Board
+
+class models.Board {
+    int MAXATTEMPTS
+    int currentAttempt
+    boolean isWinner
+    String[] attempts
+    void play()
+    boolean hasAttempts()
+    void showAttempts()
+    void results()
+    
+}
+
+models.Board --> models.SecretCombination
+models.Board ..> models.Combination
+
+
+enum models.Color
+models.Color : - RED
+models.Color : - GREEN
+models.Color : - BLUE
+models.Color : - YELLOW
+models.Color : - PINK
+models.Color : - MAGENTA
+models.Color : - ORANGE
+models.Color : - SILVER
+
+class models.Combination {
+    #int CODE_LENGTH
+    #models.Color[] code
+    boolean isValidLenght(String)
+    boolean hasValidColors(String)
+    boolean isValid(String)
+    models.Color[] fromString(String)
+    void askCombination()
+    boolean equals(models.Combination)
+    String toString()
+}
+
+models.Combination *--> models.Color
+models.Combination <|-- models.SecretCombination
+models.Combination ..> utils.Console
+
+class models.SecretCombination {
+    void generate()
+    String feedback(models.Combination)
+}
+
+class utils.Console {
+    -Scanner in
+    utils.Console()
+    String readString(String)
+
+}
+
+@enduml
